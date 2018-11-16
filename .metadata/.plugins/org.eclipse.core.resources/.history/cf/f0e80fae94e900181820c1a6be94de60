@@ -1,0 +1,15 @@
+package com.infogain.fedex.repository;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.infogain.fedex.model.User;
+
+public interface UserRepository extends CrudRepository<User, Integer>{
+
+	public List<User> findByName(String name);//read
+	public void deleteById(int id);//delete
+	public User save(User user);//create
+	public User findById(int id);//update
+}

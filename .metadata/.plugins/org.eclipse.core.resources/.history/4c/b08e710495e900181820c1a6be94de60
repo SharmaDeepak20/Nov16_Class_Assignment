@@ -1,0 +1,30 @@
+package com.infogain.fedex.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.infogain.fedex.model.User;
+
+public class UserRepositoryImpl{
+
+	@Autowired
+  private UserRepository ur;
+	
+	public List<User> findAllUsers()
+	{
+		return (List<User>) ur.findAll();
+	}//end findAll
+	
+	public void saveUser(User user)
+	{
+		ur.save(user);
+	}//end saveUser
+	
+	public void deleteUser(int id)
+	{
+		ur.delete(id);
+	}//end deleteUser
+
+}

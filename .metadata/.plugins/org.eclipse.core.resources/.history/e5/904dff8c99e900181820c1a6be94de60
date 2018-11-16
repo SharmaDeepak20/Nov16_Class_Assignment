@@ -1,0 +1,12 @@
+package com.infogain.fedex.repository;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.infogain.fedex.model.User;
+
+public interface UserRepository extends CrudRepository<User, Integer>{
+
+}

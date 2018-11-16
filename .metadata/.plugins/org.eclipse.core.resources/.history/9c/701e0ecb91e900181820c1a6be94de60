@@ -1,0 +1,5 @@
+package com.infogain.fedex.repository;
+
+public interface UserRepository {
+
+}

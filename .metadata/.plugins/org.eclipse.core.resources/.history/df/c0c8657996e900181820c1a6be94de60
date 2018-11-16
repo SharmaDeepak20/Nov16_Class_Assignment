@@ -1,0 +1,5 @@
+package com.infogain.fedex.service;
+
+public class UserService {
+
+}

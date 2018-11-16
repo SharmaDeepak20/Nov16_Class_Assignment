@@ -1,0 +1,5 @@
+package com.infogain.fedex.controller;
+
+public class UserController {
+
+}

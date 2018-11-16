@@ -1,0 +1,5 @@
+package com.infogain.fedex.model;
+
+public class User {
+
+}
